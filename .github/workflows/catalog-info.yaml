@@ -26,7 +26,7 @@ metadata:
     backstage.io/source-template: template:default/python-template
     backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/catalog'
 spec:
-  type: service
+  type: product
   lifecycle: production
   owner: team-b
   system: ecommerce-platform
