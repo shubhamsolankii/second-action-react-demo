@@ -1,0 +1,31 @@
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Performance Optimization
+  description: A catalog of products for our company
+  tags:
+    - catalog
+    - product
+    - inventory
+spec:
+  type: service
+  owner: team-xyz
+  lifecycle: production
+  cost: 5000  # Example cost in USD
+  providesApis:
+    - product-catalog-api
+  consumesApis:
+    - user-management-api
+    - inventory-api
+  links:
+    - url: 'https://docs.example.com/product-catalog'
+      title: 'Product Catalog Documentation'
+  system: inventory-system
+  tier: 2
+  environment: production
+  dependsOn:
+    - name: user-database
+      type: resource
+    - name: inventory-service
+      type: service
